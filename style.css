@@ -1,0 +1,495 @@
+  /* @keyframes spin {
+    from {
+        transform:rotate(0deg) rotateY(-180deg);
+    }
+    to {
+        transform:rotate(360deg) rotateY(180deg);
+    }
+  } */
+  @keyframes reversespin {
+    from {
+      transform:rotate(360deg)
+    }
+    to {
+      transform:rotate(0deg)
+    }
+  }
+  @keyframes spin {
+    from {
+        transform:rotate(0deg)
+    }
+    to {
+        transform:rotate(360deg)
+    }
+  }
+  @keyframes spinleftright {
+    from {
+      transform: translateX(0);
+      left: 0;
+    }
+    to {
+      right: 100%;
+      transform: translateX(100%);
+    }
+  }
+  @keyframes spinrightleft {
+    from {
+      transform: translateX(0);
+      right: 0;
+    }
+    to {
+      left: 100%;
+      transform: translateX(-100%);
+    }
+  }
+
+  .slide-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .title {
+    background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+    font-family: "Lobster", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+               glow 2500ms linear infinite 2000ms;
+    margin-bottom: 50px;
+  }  
+
+  .title-2 {
+    background: 50% 100% / 50% 50% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    font-family: "Lobster", sans-serif;
+    animation: reveal 3000ms ease-in-out forwards 200ms,
+               glow 2500ms linear infinite 2000ms;
+  }  
+
+  /* .title {
+    font-weight: 900;
+    font-size: 50px;
+    font-family: 'Lobster';
+    margin-bottom: 100px;
+    margin-left: 50px;
+	  color: white;
+  } */
+  
+  .ww {
+    width: 100vw; 
+    height: 100vh;
+  }
+  body { 
+    margin: 0px;
+    background: url("https://hd-wallpaper.wiki/wp-content/uploads/2021/06/love-wallpaper.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slider {
+    /* margin-left: 50vw;
+    margin-top: 50vh; */
+    /* position: absolute !important;
+    top: 0px;
+    transform: translate(-50%, -50%) scale(1.3); */
+    z-index: 2;
+    background: linear-gradient(0.75turn, #daf4c7, #e66a0e) !important;
+    -webkit-appearance: none;
+    width: 60%;
+    height: 92px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 30px;
+    /* filter: blur(40px); */
+  }
+  .blur{ 
+    filter: blur(40px);
+    z-index: 1;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+    
+  }
+  
+  .slider-thumb {
+    position:absolute;
+    width: 220px;
+    height: 270px;
+    margin-top: -70px;
+    left: 850px;
+    background-image: url('licesborderom.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .text-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .text {
+      font-family: 'Lobster';
+      font-size: 40px;
+      color: #d3d3d3;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.45s ease-in-out !important;
+    margin: 30px;
+    z-index: 1;
+  }
+  
+  a:hover {
+    transition: all 0.45s ease-in-out !important;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 1px dashed white;
+    color: d3d3d3;
+    text-transform: uppercase;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-family: 'Lobster';
+    font-size: 24px;
+  }
+  
+  .btn:hover {
+    background: #d3d3d3;
+    color: black;
+    border: 30px solid #d3d3d3;
+    font-family: 'Lobster';
+  }
+
+  .slider-2 {
+    /* margin-left: 50vw;
+    margin-top: 50vh; */
+    /* position: absolute !important;
+    top: 0px;
+    transform: translate(-50%, -50%) scale(1.3); */
+    z-index: 2;
+    background: linear-gradient(0.75turn, #daf4c7, #e66a0e) !important;
+    position: relative;
+    -webkit-appearance: none;
+    width: 40%;
+    height: 62px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    /* filter: blur(40px); */
+  }
+  .blur{ 
+    filter: blur(40px);
+    z-index: 1;
+  }
+  
+  .slider-2:hover {
+    opacity: 1;
+  }
+
+  
+  .slider-thumb-2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 90%;
+    margin-top: -40px;
+    background-image: url('novcsborderomi.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .text-container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.forty {
+  margin-right: 300px;
+}
+
+.zero {
+  margin-left: 340px;
+}
+
+
+.inner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1920px) {
+
+  .slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .slider-thumb {
+    position: absolute;
+    left: 45%;
+    width: 220px;
+    height: 270px;
+    margin-top: -70px;
+    background-image: url('licesborderom.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .slider-thumb-2 {
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+    background-image: url('novcsborderomi.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+}
+
+@media (max-width: 1440px) {
+
+  .slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .slider-thumb {
+    position: absolute;
+    left: 45%;
+    width: 220px;
+    height: 270px;
+    margin-top: -70px;
+    background-image: url('licesborderom.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .slider-thumb-2 {
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+    background-image: url('novcsborderomi.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+  .slide-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .slider-thumb {
+    position: absolute;
+    left: 40%;
+    width: 220px;
+    height: 270px;
+    margin-top: -70px;
+    background-image: url('licesborderom.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .slider-thumb-2 {
+    position: absolute;
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+    background-image: url('novcsborderomi.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .text-container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forty {
+  margin-right: 200px;
+}
+
+.zero {
+  margin-left: 240px;
+}
+
+}
+
+
+@media (max-width: 425px) {
+
+  .slide-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .slider-thumb {
+    width: 220px;
+    height: 270px;
+    margin-top: -70px;
+    background-image: url('licesborderom.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+  .slider-thumb-2 {
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+    background-image: url('novcsborderomi.png');
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    z-index: 3;
+    transform: scale(1);
+	  animation: pulse 2s infinite;
+  }
+
+}
+
+
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 600% 50%;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.80);
+    }
+  
+    50% {
+      transform: scale(1);;
+    }
+  
+    100% {
+      transform: scale(0.80);
+    }
+  }
+
+  @keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
