@@ -104,11 +104,6 @@
   }
   
   .slider {
-    /* margin-left: 50vw;
-    margin-top: 50vh; */
-    /* position: absolute !important;
-    top: 0px;
-    transform: translate(-50%, -50%) scale(1.3); */
     z-index: 2;
     background: linear-gradient(0.75turn, #daf4c7, #e66a0e) !important;
     -webkit-appearance: none;
@@ -137,7 +132,7 @@
     width: 220px;
     height: 270px;
     margin-top: -70px;
-    left: 850px;
+    left: 950px;
     background-image: url('licesborderom.png');
     background-size: cover;
     cursor: pointer;
@@ -173,26 +168,43 @@
 
   .btn {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 50px;
     background: transparent;
-    border: 1px dashed white;
     color: d3d3d3;
     text-transform: uppercase;
     font-weight: 900;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     font-family: 'Lobster';
     font-size: 24px;
   }
   
-  .btn:hover {
-    background: #d3d3d3;
-    color: black;
-    border: 30px solid #d3d3d3;
-    font-family: 'Lobster';
+  h1 {
+    font-weight: normal;
+    font-size: 60px;
+    margin: -150px 0 40px;
+  }
+
+  .countdown {
+    display: flex;
+    transform: scale(2);
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+  }
+
+  .time h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 0 5px;
   }
 
   .slider-2 {
@@ -279,7 +291,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 45%;
+    left: 50%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -322,7 +334,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 45%;
+    left: 50%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -369,7 +381,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 40%;
+    left: 45%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
