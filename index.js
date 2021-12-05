@@ -5,7 +5,7 @@ const seconds = document.getElementById('seconds')
 
 const currentDate = new Date().getDate();
 
-const targetDate = new Date (`December 3 2021 18:00:00`);
+const targetDate = new Date (`December 7 2021 18:00:00`);
 
 function updateCountdowntime() {
     const currentTime = new Date();
@@ -22,4 +22,13 @@ function updateCountdowntime() {
     seconds.innerHTML = s < 10 ? '0' + s : s;
 }
 
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/catch-matija/github/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		console.log("Site visits: " + res.value);
+	})
+}
+
 setInterval(updateCountdowntime, 1000);
+updateVisitCount();
