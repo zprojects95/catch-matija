@@ -291,7 +291,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 54%;
+    left: 60%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -307,6 +307,7 @@
   .slider-thumb-2 {
     width: 150px;
     height: 150px;
+    left: 60%;
     margin-top: -40px;
     background-image: url('novcsborderomi.png');
     background-size: cover;
@@ -334,7 +335,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 54%;
+    left: 60%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -350,6 +351,7 @@
   .slider-thumb-2 {
     width: 150px;
     height: 150px;
+    left: 60%;
     margin-top: -40px;
     background-image: url('novcsborderomi.png');
     background-size: cover;
@@ -378,7 +380,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 49%;
+    left: 53%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -393,7 +395,7 @@
 
   .slider-thumb-2 {
     position: absolute;
-    left: -20%;
+    left: 40%;
     width: 150px;
     height: 150px;
     margin-top: -40px;
