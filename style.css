@@ -59,11 +59,11 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 50px;
+    font-size: 100px;
     font-family: "Lobster", sans-serif;
     animation: reveal 3000ms ease-in-out forwards 200ms,
                glow 2500ms linear infinite 2000ms;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }  
 
   .title-2 {
@@ -128,17 +128,11 @@
   }
   
   .slider-thumb {
-    position:absolute;
-    width: 220px;
-    height: 270px;
-    margin-top: -70px;
-    left: 950px;
+    width: 520px;
+    height: 570px;
     background-image: url('licesborderom.png');
     background-size: cover;
-    cursor: pointer;
     display: block;
-    z-index: 3;
-    transform: scale(1);
 	  animation: pulse 2s infinite;
   }
 
@@ -276,7 +270,37 @@
   align-items: center;
 }
 
-@media (max-width: 1920px) {
+.button {
+  font-family: "Lobster", sans-serif;
+  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  margin-top: 5%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-1 {
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+}
+
+.button-1:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+/* @media (max-width: 1920px) {
 
   .slide-container {
     position: relative;
@@ -290,16 +314,11 @@
   }
 
   .slider-thumb {
-    position: absolute;
-    left: 68%;
-    width: 220px;
-    height: 270px;
-    margin-top: -70px;
+    width: 420px;
+    height: 470px;
     background-image: url('licesborderom.png');
     background-size: cover;
-    cursor: pointer;
     display: block;
-    z-index: 3;
     transform: scale(1);
 	  animation: pulse 2s infinite;
   }
@@ -335,7 +354,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 68%;
+    left: 70%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -380,7 +399,7 @@
 
   .slider-thumb {
     position: absolute;
-    left: 60%;
+    left: 64%;
     width: 220px;
     height: 270px;
     margin-top: -70px;
@@ -464,7 +483,7 @@
 	  animation: pulse 2s infinite;
   }
 
-}
+} */
 
 
   

@@ -1,3 +1,19 @@
+const start = () => {
+    setTimeout(function() {
+        confetti.start()
+    }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+};
+
+//  for stopping the confetti 
+
+const stop = () => {
+    setTimeout(function() {
+        confetti.stop()
+    }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+};
+// after this here we are calling both the function so it works
+start();
+
 const days = document.getElementById('days')
 const hours = document.getElementById('hours')
 const minutes = document.getElementById('minutes')
@@ -5,7 +21,7 @@ const seconds = document.getElementById('seconds')
 
 const currentDate = new Date().getDate();
 
-const targetDate = new Date (`December 14 2021 18:00:00`);
+const targetDate = new Date (`December 19 2021 18:00:00`);
 
 function updateCountdowntime() {
     const currentTime = new Date();
@@ -32,3 +48,5 @@ function updateVisitCount() {
 
 setInterval(updateCountdowntime, 1000);
 updateVisitCount();
+
+
